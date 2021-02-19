@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: normal normal normal Poppins;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+input {
+  border: none;
+  background: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+p,
+small,
+span {
+  line-height: 1.3rem;
+  margin: 0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
