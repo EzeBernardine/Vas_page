@@ -1,13 +1,15 @@
 import React from "react";
-import Header, { MiniHeader } from "../../components/Menu";
-import Button from "../../components/Button";
+import Menu, { MiniMenu } from "../../components/Menu";
+import Header from "../../components/Header";
+import Experience from './Experience'
 
 const Landing = () => {
   return (
     <div>
+      <Menu />
+      <MiniMenu />
       <Header />
-      <MiniHeader />
-      {/* <Button />/ */}
+      <Experience />
     </div>
   );
 };

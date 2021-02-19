@@ -3,7 +3,7 @@ import { useStyles } from "./styles";
 import vasiti from "../../assets/vasiti_logo.png";
 import Button from "../Button";
 
-const Header = () => {
+const Menu = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -30,7 +30,7 @@ const Header = () => {
     </div>
   );
 };
-export const MiniHeader = () => {
+export const MiniMenu = () => {
   const classes = useStyles();
   return (
     <nav className={classes.minNav}>
@@ -46,4 +46,4 @@ export const MiniHeader = () => {
   );
 };
 
-export default Header;
+export default Menu;

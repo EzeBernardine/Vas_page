@@ -1,7 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme) => ({
   root: {
-    padding: "0 7% ",
+    padding: "0 10% ",
+    "@media(max-width: 130px)": {
+      padding: " 0 7%",
+    },
     "@media(max-width: 800px)": {
       padding: " 0 5%",
     },
@@ -50,11 +53,14 @@ export const useStyles = makeStyles((theme) => ({
   },
   minNav: {
     boxShadow: "  1px 4px 4px rgba(0, 0, 0, 0.04)",
-    padding: "0 7% ",
     border: "1px solid rgba(0, 0, 0, 0.08)",
     height: "50px",
     display: "flex",
     alignItems: "center",
+    padding: "0 10% ",
+    "@media(max-width: 130px)": {
+      padding: " 0 7%",
+    },
     "@media(max-width: 800px)": {
       padding: " 0 5%",
     },
