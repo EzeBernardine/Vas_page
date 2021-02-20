@@ -99,6 +99,9 @@ export const useStyles = makeStyles((theme) => ({
   footer_main_root: {
     padding: "50px 7% 70px",
     backgroundColor: "#25201D",
+    "@media(max-width: 400px)": {
+      padding: "50px 5% 70px",
+    },
     "&  *": {
       color: "white",
     },
@@ -109,7 +112,8 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     gridGap: "30px",
     "@media(max-width: 1300px)": {
-      gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+      gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+      gridGap: "30px 5px",
     },
   },
   footer_row: {
@@ -132,9 +136,6 @@ export const useStyles = makeStyles((theme) => ({
   footer_icons: {
     display: "flex",
     marginBottom: "30px",
-    "@media(max-width: 800px)": {
-      justifyContent: "space-between",
-    },
     "& > li": {
       backgroundColor: "white",
       marginRight: "10px",

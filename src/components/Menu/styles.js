@@ -51,6 +51,11 @@ export const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  btn: {
+    "& *": {
+      color: "#FF5C00",
+    },
+  },
   minNav: {
     boxShadow: "  1px 4px 4px rgba(0, 0, 0, 0.04)",
     border: "1px solid rgba(0, 0, 0, 0.08)",
