@@ -144,18 +144,22 @@ const Story = (props) => {
                   What did you interact with Vasiti as?
                 </label>
                 <div className={classes.checkbox}>
-                  <Field
-                    type="text"
-                    name="email"
-                    value="VENDOR"
-                    className={classes}
-                  />
-                  <Field
-                    type="text"
-                    name="email"
-                    value="CUSTOMER"
-                    className={classes}
-                  />
+                  <div>
+                    <Field
+                      type="text"
+                      name="email"
+                      value="VENDOR"
+                      className={classes}
+                    />
+                  </div>
+                  <div>
+                    <Field
+                      type="text"
+                      name="email"
+                      value="CUSTOMER"
+                      className={classes}
+                    />
+                  </div>
                 </div>
               </div> */}
 

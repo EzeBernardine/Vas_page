@@ -10,17 +10,19 @@ const Card = ({ experienceCards }) => {
       <div className={classes.card_cards}>
         {experienceCards
           ? experienceCards.map(
-              ({ name, image, story, lastname, type, color ,location}) => (
+              ({ name, image, story, lastname, type, color, location }) => (
                 <div className={classes.card} key={generateID(14)}>
                   <div className={classes.card_img_container}>
                     <img src={image} alt="" />
                   </div>
-                  <Typography variant="h3">{name +" "+ lastname}</Typography>
+                  <Typography variant="h3">{name + " " + lastname}</Typography>
                   <div className={classes.card_details}>
                     {location ? <span>{location}</span> : null}
-                    <span style={color ? { color: `${color}` } : null}>
-                      {type ? type : "CUSTOMER"}
-                    </span>
+                    {type ? (
+                      <span style={color ? { color: `${color}` } : null}>
+                        type
+                      </span>
+                    ) : null}
                   </div>
                   <p>{story}</p>
                 </div>

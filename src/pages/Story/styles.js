@@ -96,9 +96,13 @@ export const useStyles = makeStyles((theme) => ({
       fontWeight: "600",
     },
   },
-  checkbox: {
-    '& > input': {
-      
-    }
-  }
+  // checkbox: {
+  //   display: 'inline-flex',
+  //   "& > div": {
+  //     backgroundColor: "red",
+  //     height: "50px",
+  //     width: "50px",
+  //     marginRight: '30px'
+  //   },
+  // },
 }));
