@@ -35,20 +35,20 @@ export const useStyles = makeStyles((theme) => ({
       lineHeight: "24px",
       color: "#474747",
       fontWeight: "normal",
-      letterSpacing: '0.02em',
+      letterSpacing: "0.02em",
       margin: "30px 0 10px",
     },
   },
   card_details: {
-      marginBottom: '30px',
-    "& > span:first-child": {
+    marginBottom: "30px",
+    "& > span": {
       color: "#535353",
       fontSize: "15px",
       lineHeight: "18px",
       fontWeight: "500",
       marginRight: "16px",
     },
-    "& > span:last-child": {
+    "& > small": {
       color: "#0D019A",
       fontSize: "13px",
       lineHeight: "16px",

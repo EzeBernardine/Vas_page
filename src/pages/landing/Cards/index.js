@@ -19,9 +19,9 @@ const Card = ({ experienceCards }) => {
                   <div className={classes.card_details}>
                     {location ? <span>{location}</span> : null}
                     {type ? (
-                      <span style={color ? { color: `${color}` } : null}>
-                        type
-                      </span>
+                      <small style={color ? { color: `${color}` } : null}>
+                        {type}
+                      </small>
                     ) : null}
                   </div>
                   <p>{story}</p>

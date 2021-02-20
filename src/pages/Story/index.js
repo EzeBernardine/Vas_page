@@ -139,30 +139,6 @@ const Story = (props) => {
                 />
               </div>
 
-              {/* <div className="form-group">
-                <label className={classes.story_label} htmlFor="email">
-                  What did you interact with Vasiti as?
-                </label>
-                <div className={classes.checkbox}>
-                  <div>
-                    <Field
-                      type="text"
-                      name="email"
-                      value="VENDOR"
-                      className={classes}
-                    />
-                  </div>
-                  <div>
-                    <Field
-                      type="text"
-                      name="email"
-                      value="CUSTOMER"
-                      className={classes}
-                    />
-                  </div>
-                </div>
-              </div> */}
-
               <div className="form-group">
                 <label className={classes.story_label} htmlFor="location">
                   City or Higher Institution (for Students)
@@ -182,6 +158,7 @@ const Story = (props) => {
                   text="Share your story!"
                   bg="#FF5C00"
                   padding="15px 30px"
+                  click={() => console.log("sdfos")}
                 />
               </div>
             </Form>
