@@ -1,8 +1,11 @@
 import React from "react";
-import { Formik, Form, useField, Field } from "formik";
-import * as Yup from "yup";
+import { Formik, Form, Field } from "formik";
+// import * as Yup from "yup";
 import { useStyles } from "./styles";
-import { AiOutlinePaperClip, AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlinePaperClip,
+  // AiOutlineClose
+} from "react-icons/ai";
 import Button from "../../components/Button";
 
 const Story = () => {
@@ -67,7 +70,7 @@ const Story = () => {
 
               <div className="form-group">
                 <label className={classes.story_label} htmlFor="email">
-                Share your story
+                  Share your story
                 </label>
                 <Field
                   type="email"
