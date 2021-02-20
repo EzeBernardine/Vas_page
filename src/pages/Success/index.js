@@ -7,7 +7,9 @@ const Success = (props) => {
   return (
     <div className={classes.Success_root}>
       <section className={classes.Success_root_main}>
-        <div className={classes.icon}>🎉</div>
+        <span role="img" aria-label="Smiling emoji" className={classes.icon}>
+          🎉
+        </span>
         <h1>Thank you for sharing your story!</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

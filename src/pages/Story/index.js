@@ -23,7 +23,7 @@ const validationSchema = yup.object().shape({
 });
 
 const Story = (props) => {
-  const [image, setImage] = useState("");
+  // const [image, setImage] = useState("");
   const classes = useStyles();
 
   const handleImageUpload = async () => {

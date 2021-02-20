@@ -20,7 +20,7 @@ export const useStyles = makeStyles((theme) => ({
     "@media(max-width: 800px)": {
       padding: "10px",
     },
-    "& > div:first-child": {
+    "& > span": {
       marginBottom: "16px",
       width: "155px",
       borderRadius: "100%",
