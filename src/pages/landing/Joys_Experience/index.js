@@ -2,7 +2,6 @@ import React from "react";
 import { useStyles } from "./styles";
 import Testimonial from "../../../assets/black-beautiful-ladies-smiling 1.png";
 import { Typography } from "@material-ui/core";
-// import Button from "../../../components/Button";
 import { NavLink } from "react-router-dom";
 
 const Experience = () => {

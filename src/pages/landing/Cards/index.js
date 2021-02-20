@@ -7,21 +7,25 @@ const Card = ({ experienceCards }) => {
   return (
     <div className={classes.card_root}>
       <div className={classes.card_cards}>
-        {experienceCards.map(
-          ({ name, img, content, location, type, color }) => (
-            <div className={classes.card}>
-              <div className={classes.card_img_container}>
-                <img src={img} alt="" />
-              </div>
-              <Typography variant="h3">{name}</Typography>
-              <div className={classes.card_details}>
-                {location ? <span>{location}</span> : null}
-                <span style={color ? { color: `${color}` } : null}>{type}</span>
-              </div>
-              <p>{content}</p>
-            </div>
-          )
-        )}
+        {experienceCards
+          ? experienceCards.map(
+              ({ name, image, story, lastname, type, color }) => (
+                <div className={classes.card}>
+                  <div className={classes.card_img_container}>
+                    <img src={image} alt="" />
+                  </div>
+                  <Typography variant="h3">{name}</Typography>
+                  <div className={classes.card_details}>
+                    {lastname ? <span>{lastname}</span> : null}
+                    <span style={color ? { color: `${color}` } : null}>
+                      {type ? type : "CUSTOMER"}
+                    </span>
+                  </div>
+                  <p>{story}</p>
+                </div>
+              )
+            )
+          : null}
       </div>
     </div>
   );

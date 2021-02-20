@@ -112,4 +112,17 @@ export const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  btn: {
+    // backgroundColor: "red",
+    position: "relative",
+    "&:before": {
+      position: "absolute",
+      left: "0",
+      width: "200px",
+      height: "2px",
+      content: ' "" ',
+      bottom: '0',
+      backgroundColor: 'yellow'
+    },
+  },
 }));
