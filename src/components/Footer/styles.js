@@ -38,8 +38,9 @@ export const useStyles = makeStyles((theme) => ({
       padding: "0 5%",
     },
     "@media(max-width: 600px) ": {
-      margin: "-50px auto 0",
+      margin: "0px auto 0",
       maxWidth: "400px",
+      order: "2",
     },
   },
   footer_memeber: {
@@ -58,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
       lineHeight: "40px",
       letterSpacing: "-0.03em",
       marginBottom: "16px",
-      "@media(max-width: 1000px)": {
+      "@media(max-width: 1000px) and(min-width: 700px)": {
         fontSize: "30px",
         lineHeight: "30px",
       },
@@ -69,7 +70,7 @@ export const useStyles = makeStyles((theme) => ({
       lineHeight: "20px",
       letterSpacing: "0.02em",
       marginBottom: "32px",
-      "@media(max-width: 1000px)": {
+      "@media(max-width: 1000px)and(min-width: 700px)": {
         fontSize: "12px",
         lineHeight: "15px",
       },
@@ -110,9 +111,6 @@ export const useStyles = makeStyles((theme) => ({
     "@media(max-width: 1300px)": {
       gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
     },
-    "@media(max-width: 800px)": {
-      textAlign: "center",
-    },
   },
   footer_row: {
     "& > h4": {
@@ -125,18 +123,18 @@ export const useStyles = makeStyles((theme) => ({
       padding: "0",
       "& > li": {
         fontSize: "14px",
-        fontWeight: "16px",
+        lineHeight: "16px",
         fontWeight: "normal",
         marginBottom: "10px",
       },
     },
   },
   footer_icons: {
-      display: "flex",
-      marginBottom: "30px",
-      "@media(max-width: 800px)": {
-        justifyContent: "space-between",
-      },
+    display: "flex",
+    marginBottom: "30px",
+    "@media(max-width: 800px)": {
+      justifyContent: "space-between",
+    },
     "& > li": {
       backgroundColor: "white",
       marginRight: "10px",
