@@ -1,6 +1,7 @@
 import React from "react";
 import { useStyles } from "./styles";
 import { Typography } from "@material-ui/core";
+import { generateID } from "../../../lib/generateID";
 
 const Card = ({ experienceCards }) => {
   const classes = useStyles();
@@ -10,7 +11,7 @@ const Card = ({ experienceCards }) => {
         {experienceCards
           ? experienceCards.map(
               ({ name, image, story, lastname, type, color }) => (
-                <div className={classes.card}>
+                <div className={classes.card} key={generateID(14)}>
                   <div className={classes.card_img_container}>
                     <img src={image} alt="" />
                   </div>

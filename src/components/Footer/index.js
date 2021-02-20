@@ -5,6 +5,7 @@ import Button from "../Button/index";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { TiSocialInstagram } from "react-icons/ti";
+import { generateID } from "../../lib/generateID";
 
 export const MiniFooter = () => {
   const classes = useStyles();
@@ -66,17 +67,17 @@ const Footer = () => {
     <div className={classes.footer_main_root}>
       <div className={classes.footer_main}>
         {footer.map(({ head, others }) => (
-          <div className={classes.footer_row}>
+          <div className={classes.footer_row} key={generateID(15)}>
             <h4>{head}</h4>
             <ul>
               {others.map((item) => (
-                <li>{item}</li>
+                <li key={generateID(11)}>{item}</li>
               ))}
             </ul>
           </div>
         ))}
 
-        <div className={classes.footer_row}>
+        <div className={classes.footer_row} key={generateID(12)}>
           <h4>Join our community</h4>
           <ul>
             <div className={classes.footer_icons}>
