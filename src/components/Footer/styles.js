@@ -117,7 +117,7 @@ export const useStyles = makeStyles((theme) => ({
   footer_row: {
     "& > h4": {
       fontSize: "16px",
-      fontWeight: "19px",
+      lineHeight: "19px",
       fontWeight: "bold",
       marginBottom: "20px",
     },
@@ -133,7 +133,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   footer_icons: {
       display: "flex",
-      marginBottom: "48px",
+      marginBottom: "30px",
       "@media(max-width: 800px)": {
         justifyContent: "space-between",
       },
