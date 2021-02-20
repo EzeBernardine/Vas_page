@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import JoyExperience from "./Joys_Experience";
 import JosaihExperience from "./Josiahs_Experience";
 import Card from "./Cards";
+import { experienceCards } from "./data_1experience";
 import { experienceCards2 } from "./data_2experience";
 import { getStoryFromLocalStorage } from "../../helper";
 import Footer, { MiniFooter } from "../../components/Footer";
@@ -15,7 +16,7 @@ const Landing = () => {
       <MiniMenu />
       <Header />
       <JoyExperience />
-      <Card experienceCards={getStoryFromLocalStorage("story")} />
+      <Card experienceCards={getStoryFromLocalStorage("story") ? getStoryFromLocalStorage("story") : experienceCards} />
       <JosaihExperience />
       <Card experienceCards={experienceCards2} />
       <MiniFooter />
