@@ -53,7 +53,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   btn: {
     "& *": {
-      color: "#FF5C00",
+      color: "#fff",
     },
   },
   minNav: {

@@ -95,16 +95,20 @@ export const useStyles = makeStyles((theme) => ({
         lineHeight: "24px",
       },
     },
-    "& > span": {
-      fontWeight: "normal",
-      fontSize: "16px",
-      lineHeight: "32px",
+    "& div ": {
       marginTop: "48px",
-      letterSpacing: "0.02em",
-      "@media(max-width: 700px)": {
+      "&  > a": {
+        fontWeight: "normal",
         fontSize: "16px",
         lineHeight: "32px",
-        fontWeight: "500",
+        letterSpacing: "0.02em",
+        textDecoration: "none",
+        color: "#fff",
+        "@media(max-width: 700px)": {
+          fontSize: "16px",
+          lineHeight: "32px",
+          fontWeight: "500",
+        },
       },
     },
   },
