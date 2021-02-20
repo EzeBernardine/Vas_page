@@ -2,6 +2,7 @@ import React from "react";
 import { useStyles } from "./styles";
 import Testimonial from "../../../assets/woman-shoppingbag-card 1(1).png";
 import { Typography } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 
 const Experience = () => {
   const classes = useStyles();
@@ -25,7 +26,9 @@ const Experience = () => {
             definately be coming back!
           </p>
 
-          <span>Share your own story!</span>
+          <div className={classes.btn}>
+            <NavLink to="/story">Share your own story!</NavLink>
+          </div>
         </div>
 
         <div className={classes.exp_img_content}>

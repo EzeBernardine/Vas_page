@@ -78,11 +78,15 @@ export const useStyles = makeStyles((theme) => ({
         lineHeight: "24px",
       },
     },
-    "& > span": {
+  },
+  btn: {
+    position: "relative",
+    "& a": {
       fontWeight: "normal",
       fontSize: "16px",
       lineHeight: "32px",
       marginTop: "48px",
+      textDecoration: 'none',
       letterSpacing: "0.02em",
       color: "#FF5C00",
       "@media(max-width: 700px)": {
@@ -90,6 +94,18 @@ export const useStyles = makeStyles((theme) => ({
         lineHeight: "32px",
         fontWeight: "500",
       },
+    },
+    "&:before": {
+      position: "absolute",
+      left: "-16px",
+      width: "200px",
+      height: "100%",
+      content: ' "" ',
+      bottom: "-100%",
+      border: "1px solid transparent;",
+      borderRadius: " 69% 7%",
+      transform: " rotate(-1deg)",
+      borderTop: "1px solid #FF5C00",
     },
   },
 }));

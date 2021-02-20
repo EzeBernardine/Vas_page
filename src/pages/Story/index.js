@@ -17,7 +17,8 @@ const validationSchema = yup.object().shape({
   lastname: yup
     .string()
     .min(2)
-    .required("Missing lastname phone"),
+    .required("Missing lastname "),
+  location: yup.string().min(2),
   story: yup.string(),
   image: yup.mixed().required("A file is required"),
 });
@@ -51,18 +52,27 @@ const Story = (props) => {
         <h2>Share your amazing story!</h2>
 
         <Formik
-          initialValues={{ name: "", lastname: "", story: "", image: "" }}
+          initialValues={{
+            name: "",
+            lastname: "",
+            story: "",
+            image: "",
+            location: "",
+          }}
           validationSchema={validationSchema}
           onSubmit={async (values, { resetForm, setSubmitting }) => {
             const savedImage = await handleImageUpload();
             values.image = savedImage;
             saveStoryToLocalStorage("story", values);
             resetForm();
-         
+
             props.history.push("/success");
           }}
         >
-          {({ handleChange, values: { name, lastname, story, image } }) => (
+          {({
+            handleChange,
+            values: { name, lastname, story, image, location },
+          }) => (
             <Form className={classes.form}>
               <div className="form-group">
                 <label className={classes.story_label} htmlFor="image">
@@ -90,7 +100,7 @@ const Story = (props) => {
               <div className={classes.story_doublefield}>
                 <div className="form-group">
                   <label className={classes.story_label} htmlFor="name">
-                    Full Name
+                    First Name
                   </label>
                   <Field
                     type="text"
@@ -103,7 +113,7 @@ const Story = (props) => {
 
                 <div className="form-group">
                   <label className={classes.story_label} htmlFor="lastname">
-                    Location
+                    Last Name
                   </label>
                   <Field
                     type="text"
@@ -123,8 +133,9 @@ const Story = (props) => {
                   type="text"
                   name="story"
                   value={story}
+                  component="textarea"
                   onChange={handleChange}
-                  className={classes.story_formControl_InputArea}
+                  className={classes.story_formControl_textArea}
                 />
               </div>
 
@@ -132,24 +143,34 @@ const Story = (props) => {
                 <label className={classes.story_label} htmlFor="email">
                   What did you interact with Vasiti as?
                 </label>
-                <Field
-                  type="email"
-                  name="email"
-                  component="checkbox"
-                  className={classes.story_formControl_InputArea}
-                />
+                <div className={classes.checkbox}>
+                  <Field
+                    type="text"
+                    name="email"
+                    value="VENDOR"
+                    className={classes}
+                  />
+                  <Field
+                    type="text"
+                    name="email"
+                    value="CUSTOMER"
+                    className={classes}
+                  />
+                </div>
               </div> */}
 
-              {/* <div className="form-group">
-                <label className={classes.story_label} htmlFor="email">
+              <div className="form-group">
+                <label className={classes.story_label} htmlFor="location">
                   City or Higher Institution (for Students)
                 </label>
                 <Field
-                  type="email"
-                  name="higherInstitution"
+                  type="text"
+                  name="location"
+                  value={location}
+                  onChange={handleChange}
                   className={classes.story_formControl_InputArea}
                 />
-              </div> */}
+              </div>
 
               <div className={classes.story_btn}>
                 <Button

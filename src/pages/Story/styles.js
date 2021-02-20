@@ -96,4 +96,9 @@ export const useStyles = makeStyles((theme) => ({
       fontWeight: "600",
     },
   },
+  checkbox: {
+    '& > input': {
+      
+    }
+  }
 }));

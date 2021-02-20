@@ -9,7 +9,7 @@ export const experienceCards = [
   {
    image: exp1,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "CUSTOMER",
     story:
       "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
@@ -17,7 +17,7 @@ export const experienceCards = [
   {
    image: exp2,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "CUSTOMER",
     story:
       "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi.  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet ",
@@ -25,7 +25,7 @@ export const experienceCards = [
   {
    image: exp3,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "CUSTOMER",
     story:
       "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
@@ -33,7 +33,7 @@ export const experienceCards = [
   {
    image: exp4,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "VENDOR",
     color: '#049A01',
     story:
@@ -42,7 +42,7 @@ export const experienceCards = [
   {
    image: exp5,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "VENDOR",
     color: '#049A01',
     story:
@@ -51,7 +51,7 @@ export const experienceCards = [
   {
    image: exp6,
     name: "Joseph Ike",
-    lastname: "In Ikeja",
+    location: "In Ikeja",
     type: "VENDOR",
     color: '#049A01',
     story:

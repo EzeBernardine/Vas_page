@@ -113,16 +113,32 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-    // backgroundColor: "red",
     position: "relative",
+    "& a": {
+      fontWeight: "normal",
+      fontSize: "16px",
+      lineHeight: "32px",
+      marginTop: "48px",
+      textDecoration: 'none',
+      letterSpacing: "0.02em",
+      color: "#FF5C00",
+      "@media(max-width: 700px)": {
+        fontSize: "16px",
+        lineHeight: "32px",
+        fontWeight: "500",
+      },
+    },
     "&:before": {
       position: "absolute",
-      left: "0",
+      left: "-16px",
       width: "200px",
-      height: "2px",
+      height: "100%",
       content: ' "" ',
-      bottom: '0',
-      backgroundColor: 'yellow'
+      bottom: "-100%",
+      border: "1px solid transparent;",
+      borderRadius: " 69% 7%",
+      transform: " rotate(-1deg)",
+      borderTop: "1px solid #fff",
     },
   },
 }));
