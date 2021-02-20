@@ -6,7 +6,7 @@ import JosaihExperience from "./Josiahs_Experience";
 import Card from "./Cards";
 import { experienceCards } from "./data_1experience";
 import { experienceCards2 } from "./data_2experience";
-import Footer from '../../components/Footer'
+import Footer, {MiniFooter} from '../../components/Footer'
 
 const Landing = () => {
   return (
@@ -18,6 +18,7 @@ const Landing = () => {
       <Card experienceCards={experienceCards} />
       <JosaihExperience />
       <Card experienceCards={experienceCards2} />
+      <MiniFooter />
       <Footer />
     </div>
   );
