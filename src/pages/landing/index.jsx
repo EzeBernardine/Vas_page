@@ -1,7 +1,12 @@
 import React from "react";
 import Menu, { MiniMenu } from "../../components/Menu";
 import Header from "../../components/Header";
-import Experience from './Experience'
+import JoyExperience from "./Joys_Experience";
+import JosaihExperience from "./Josiahs_Experience";
+import Card from "./Cards";
+import { experienceCards } from "./data_1experience";
+import { experienceCards2 } from "./data_2experience";
+import Footer from '../../components/Footer'
 
 const Landing = () => {
   return (
@@ -9,7 +14,11 @@ const Landing = () => {
       <Menu />
       <MiniMenu />
       <Header />
-      <Experience />
+      <JoyExperience />
+      <Card experienceCards={experienceCards} />
+      <JosaihExperience />
+      <Card experienceCards={experienceCards2} />
+      <Footer />
     </div>
   );
 };
